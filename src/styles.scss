@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use './m3-theme';
+
+@include mat.core();
+
+html,
+body {
+
+    @include mat.all-component-themes(m3-theme.$light-theme);
+
+    color: var(--mat-app-text-color);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+    font-family: var(--mat-card-title-text-font);
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(135deg, #651582, #dd4d75, #ffa500);
+}
