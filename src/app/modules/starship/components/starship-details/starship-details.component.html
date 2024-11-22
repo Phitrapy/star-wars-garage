@@ -13,7 +13,11 @@
     <div>Consumables: {{starship.consumables}}</div>
 
     Pilots:
-    
+    <div class="pilot-list">
+        @for (pilot of pilots; track pilot.url){
+        <button type="button" class="link-button" (click)="showPilot(pilot)">{{pilot.name}}</button>
+        }
+    </div>
     <div>Crew: {{starship.crew}}</div>
     <div>Passengers: {{starship.passengers}}</div>
 
