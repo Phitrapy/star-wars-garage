@@ -1,0 +1,8 @@
+@for (starship of starships; track starship.name) {
+<mat-card class="card-item" appearance="outlined" (click)="starshipSelected.emit(starship)">
+    <mat-card-content>
+        <mat-card-title>{{starship.name}}</mat-card-title>
+        <mat-card-subtitle>{{starship.starship_class}}</mat-card-subtitle>
+    </mat-card-content>
+</mat-card>
+}
