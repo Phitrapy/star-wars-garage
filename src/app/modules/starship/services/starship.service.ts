@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { StarshipHttpService } from './starship-http.service';
-import { BehaviorSubject, map, Observable, shareReplay } from 'rxjs';
+import { Observable, shareReplay } from 'rxjs';
 import { Starship } from '../models/starship.model';
 
 @Injectable({

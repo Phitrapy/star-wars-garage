@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, expand, map, Observable, of, reduce } from 'rxjs';
+import { catchError, expand, Observable, of, reduce } from 'rxjs';
 import { BASE_API_URL } from '../../../constants/api.constant';
 import { PaginatedDTO } from '../../../shared/models/paginated-dto.model';
 import { People } from '../models/people.model';

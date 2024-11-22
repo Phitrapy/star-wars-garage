@@ -1,5 +1,4 @@
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
-import { StarshipService } from '../../services/starship.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Starship } from '../../models/starship.model';
 import { CommonModule } from '@angular/common';

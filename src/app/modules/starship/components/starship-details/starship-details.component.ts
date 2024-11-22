@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Input, OnInit, Output } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { Starship } from '../../models/starship.model';
-import { NgControl } from '@angular/forms';
 
 @Component({
   selector: 'app-starship-details',

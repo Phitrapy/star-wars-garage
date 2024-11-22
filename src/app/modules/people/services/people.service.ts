@@ -1,9 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { PeopleHttpService } from './people-http.service';
-import { map, Observable, shareReplay, take } from 'rxjs';
-import { MatDialog } from '@angular/material/dialog';
+import { Observable, shareReplay } from 'rxjs';
 import { People } from '../models/people.model';
-import { PeopleDetailsComponent } from '../components/people-details/people-details.component';
 
 @Injectable({
   providedIn: 'root',
