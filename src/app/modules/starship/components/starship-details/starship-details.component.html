@@ -1,0 +1,30 @@
+@if (starship) {
+<article class="details-content">
+    <section>
+        <h2>{{starship.name}}</h2>
+
+        <div><i>{{starship.starship_class}}, {{starship.model}} - {{starship.length}}m</i></div>
+    </section>
+
+    <div>Manufactured by {{starship.manufacturer}} - {{starship.cost_in_credits}} credits</div>
+    <div>Hyperdrive rating: {{starship.hyperdrive_rating}}</div>
+    <div>MGLT: {{starship.MGLT}}</div>
+    <div>Cargo capacity: {{starship.cargo_capacity}}kg</div>
+    <div>Consumables: {{starship.consumables}}</div>
+
+    Pilots:
+    
+    <div>Crew: {{starship.crew}}</div>
+    <div>Passengers: {{starship.passengers}}</div>
+
+    <div>Created: {{starship.created | date}}</div>
+    <div>Edited: {{starship.edited | date}}</div>
+
+</article>
+
+
+} @else {
+<div class="empty-state">
+    <b>Select a starship</b>
+</div>
+}
