@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, Input } from '@angular/core';
 import { Starship } from '../../models/starship.model';
+import { PeopleDialogService } from '../../../people/services/people-dialog.service';
+import { People } from '../../../people/models/people.model';
 
 @Component({
   selector: 'app-starship-details',
