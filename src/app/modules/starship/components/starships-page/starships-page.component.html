@@ -1,0 +1,5 @@
+<app-page-layout>
+    <app-starship-list page-layout-list [starships]="starships"
+        (starshipSelected)="selectStarship($event)"></app-starship-list>
+    <app-starship-details page-layout-details [data]="{selectedStarship, people}"></app-starship-details>
+</app-page-layout>
